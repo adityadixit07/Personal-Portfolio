@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Cookie&family=Dancing+Script&family=Dongle:wght@700&family=Redressed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffe8a8;
+    min-height: 100vh;
+    display: flex;
+    color: blue;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.profile-picture{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+#myimage{
+    width: 178px;
+    height:190px;
+}
+.skill-wrapper{
+    margin: 25px 0px;
+}
+
+.skill{
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.bar{
+    position: relative;
+    background: #ff7b7b;
+    height: 19px;
+    border-radius: 15px;
+    animation: animatebar 3s linear;
+}
+.tooltip{
+    background: black;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    padding: 5px 10px 15px 10px;
+    clip-path: polygon(0% 0%,100% 0%,100% 75%,60% 75%,50% 80%,40% 75%,0% 75%);
+
+}
+@keyframes animatebar {
+    from{
+        width:0;
+    }
+    to {
+        widh: 100;
+    }
+}
+
+#copyright{
+    color: black;
+    font-weight: bold;
+}
